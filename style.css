@@ -26,6 +26,7 @@ body {
     color: white;
     font-weight: 700;
     border-radius: 5px;
+    margin-top: 10px;
 }
 
 .donet-today {
@@ -54,8 +55,127 @@ Section {
     color: white;
     font-weight: 700;
     border-radius: 5px;
+    margin: 10px;
+
 }
 
-footer p {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+}
+
+.donate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    padding: 130px 20px;
+}
+
+.container .heading {
     text-align: center;
+    max-width: 690px;
+    margin-bottom: 50px
+}
+
+.container .heading h2 {
+    margin-bottom: 20px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.box-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-row .box {
+    border-radius: 5px;
+    min-width: 135px;
+    text-align: center;
+    padding: 43px 23px;
+    margin: 22px;
+    background-color: #FAFAFA;
+    color: #707070;
+    border: 1px solid #FAFAFA;
+    transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+
+.box-row .box:hover {
+    background-color: #FFEEEE;
+    border: 1px solid #FF5959;
+    color: #FF5959;
+}
+
+.box-row .box h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #B3B3B3;
+    font-size: 18px;
+    /* Firefox */
+}
+
+.amount-box input[type=text] {
+    border: none;
+    border-bottom: 0.125rem solid #DADADA;
+    width: 100%;
+    height: 2rem;
+    font-size: 1.0625rem;
+    padding: 10px;
+    padding-bottom: 0.5rem;
+}
+
+.amount-box input:focus,
+.amount-box input:focus {
+    outline: none;
+}
+
+.amount-box {
+    margin-top: 50px;
+    padding: 0px 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.donation-amount {
+    text-align: center;
+}
+
+.amount-box input.btn {
+    margin-top: 20px;
+    padding: 16px 20px;
+    background-color: #FF5959;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: semi-bold;
+
+}
+
+.top {
+    margin: 20px;
 }

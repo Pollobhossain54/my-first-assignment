@@ -4,6 +4,32 @@ body {
 
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+
+section {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    border: none;
+    padding-left: 0;
+}
+
 .top-banner {
     height: 70vh;
     text-align: center;
@@ -34,14 +60,11 @@ body {
     text-align: center;
 }
 
-Section {
-    display: flex;
-    margin-bottom: 150px;
-}
 
 .half-width {
     width: 50%;
-    padding-left: 2%;
+    margin-right: 10px;
+
 }
 
 .half-width img {
@@ -55,43 +78,33 @@ Section {
     color: white;
     font-weight: 700;
     border-radius: 5px;
-    margin: 10px;
+    margin-top: 10px;
 
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+.link-button a {
+    color: white;
+    text-align: none;
 }
 
-body {
-    font-size: 1rem;
-}
 
-a {
-    text-decoration: none;
-}
-
-section {
-    margin: 0;
-    padding: 0;
-}
-
-.donate {
+.d-flex {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container {
-    padding: 130px 20px;
+
+.heading {
+
+    max-width: 690px;
+    margin-bottom: 50px;
+
 }
 
-.container .heading {
+.subheading {
+    max-width: 90%;
     text-align: center;
-    max-width: 690px;
-    margin-bottom: 50px
 }
 
 .container .heading h2 {
@@ -131,10 +144,9 @@ section {
 }
 
 input::placeholder {
-    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #B3B3B3;
     font-size: 18px;
-    /* Firefox */
+
 }
 
 .amount-box input[type=text] {
@@ -178,4 +190,116 @@ input::placeholder {
 
 .top {
     margin: 20px;
+}
+
+
+.container {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 65px 20px;
+    display: block;
+    justify-items: center;
+}
+
+.survive {
+    display: flex;
+    justify-content: center;
+}
+
+/* Cards */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 30px 12px;
+    margin: 0 24px;
+    border-radius: 5px;
+
+}
+
+.card img {
+    width: 60px;
+
+}
+
+.card h2 {
+    font-size: 24px;
+    font-weight: semi-bold;
+    margin-bottom: 16px;
+    color: #121212;
+}
+
+.card p {
+    color: #707070;
+    font-size: 16px;
+
+
+}
+
+.food {
+    background-color: #4f9da625;
+}
+
+.selter {
+    background-color: #FF595925;
+}
+
+.edu {
+    background-color: #FFF4D695;
+}
+
+.heading {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+
+/* Email Subscription */
+.subscribe-box {
+    display: flex;
+    justify-content: center;
+    background-color: #FFF4D6;
+    padding: 76px 0px;
+}
+
+.subscribe-box {
+    padding: 76px;
+}
+
+.subscribe-box input[type=email] {
+    background-color: #D9D9D9;
+    border: none;
+    border: 0.125rem solid #DADADA;
+    width: 100%;
+    height: 48px;
+    font-size: 1.0625rem;
+    padding: 10px;
+    padding-bottom: 0.5rem;
+    border-radius: 5px 0 0 5px;
+}
+
+.subscribe-btn {
+    padding: 14px 43px;
+    background-color: #FF5959;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #0B0D17;
+    color: #D9DBE1;
+    text-align: center;
+    align-items: center;
+    padding: 43px 42px;
 }
